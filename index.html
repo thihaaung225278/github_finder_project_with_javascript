@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- bootswatch cdn -->
+	<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/journal/bootstrap.min.css" rel="stylesheet" integrity="sha384-0d2eTc91EqtDkt3Y50+J9rW3tCXJWw6/lDgf1QNHLlV0fadTyvcA120WPsSOlwga" crossorigin="anonymous">
+	<!-- fontawesome cdn-->
+	<script src="https://kit.fontawesome.com/9e4f5b5b44.js" crossorigin="anonymous"></script>
+	<!-- style -->
+	<style>
+		/*html{
+			height:100vh;
+			position: relative;
+		}
+		#footer{
+			position: sticky;
+			width:100%;
+			bottom: 0;
+		}*/
+		#footer p{
+			padding:0;
+			margin:0;
+		}
+	</style>
+	<title>Github Finder</title>
+</head>
+<body>
+
+	<!-- Start Navbar -->
+	<nav class="navbar navbar-dark bg-primary shadow-sm sticky-top">
+	  	<div class="container">
+	    	<a href="#" class="navbar-brand">
+		      	<!-- Logo Image -->
+		      	<i class="fab fa-github display-4 d-inline-block align-middle mr-2"></i>
+		      	<!-- Logo Text -->
+		      	<span class="text-uppercase font-weight-bold">GitHub Finder</span>
+	    	</a>
+	 	</div>
+	</nav>
+	<!-- End Navbar -->
+
+	<div class="container searchContainer">
+		<!-- Search User Card -->
+		<div class="card mt-3 shadow-sm search">
+			<div class="card-header"><h1 class="text-primary">Search GitHub Users</h1></div>
+			<div class="card-body">
+				<p>Enter a username to fetch a user profile and repos.</p>
+				<input type="text" class="form-control" id="searchUser" placeholder="GitHub Username ....">
+			</div>
+		</div>
+
+		<div id="profile"></div>
+		<!-- Search User Card -->
+
+		<!-- <hr> -->
+
+		<!-- Profile Card -->
+		<!-- <div class="card px-3 pt-3 shadow-sm">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="img-fluid" alt="user">
+					<button class="btn btn-primary btn-block my-3">View Profile</button>
+				</div>
+				<div class="col-md-9">
+					<span class="badge badge-primary p-2 mb-2">Public Repos : 10</span>
+					<span class="badge badge-success p-2 mb-2">Public Gists : 20</span>
+					<span class="badge badge-warning p-2 mb-2">Flowers : 140</span>
+					<span class="badge badge-info p-2 mb-2">Following : 2</span>
+
+					<ul class="list-group my-3">
+						<li class="list-group-item">Company : IT Solution</li>
+						<li class="list-group-item">Website/blog : www.facebook.com</li>
+						<li class="list-group-item">Location: Pyi Thu Kwet Tit st, Yangon Tps, Yangon</li>
+						<li class="list-group-item">Member Since : 2018</li>
+					</ul>
+				</div>
+			</div>
+		</div> -->
+		<!-- Profile Card -->
+
+		<!-- <hr> -->
+
+		<!-- Latest Repos -->
+		<!-- <h2 class="text-primary mb-3">Latest Repos</h2> -->
+		<!-- Latest Repos -->
+
+		<!-- <ul class="list-group shadow-sm mb-5">
+			<li class="list-group-item">
+				Repo One
+				<span class="badge badge-danger p-2 float-right">Stars : 0</span>
+				<span class="badge badge-success p-2 mr-2 float-right">Watchers : 0</span>
+				<span class="badge badge-primary p-2 mr-2 float-right">forks : 0</span>
+			</li>
+			<li class="list-group-item">
+				Repo Two
+				<span class="badge badge-danger p-2 float-right">Stars : 0</span>
+				<span class="badge badge-success p-2 mr-2 float-right">Watchers : 0</span>
+				<span class="badge badge-primary p-2 mr-2 float-right">forks : 0</span>
+			</li>
+			<li class="list-group-item">
+				Repo Two
+				<span class="badge badge-danger p-2 float-right">Stars : 0</span>
+				<span class="badge badge-success p-2 mr-2 float-right">Watchers : 0</span>
+				<span class="badge badge-primary p-2 mr-2 float-right">forks : 0</span>
+			</li>
+			<li class="list-group-item">
+				Repo Two
+				<span class="badge badge-danger p-2 float-right">Stars : 0</span>
+				<span class="badge badge-success p-2 mr-2 float-right">Watchers : 0</span>
+				<span class="badge badge-primary p-2 mr-2 float-right">forks : 0</span>
+			</li>
+			<li class="list-group-item">
+				Repo Two
+				<span class="badge badge-danger p-2 float-right">Stars : 0</span>
+				<span class="badge badge-success p-2 mr-2 float-right">Watchers : 0</span>
+				<span class="badge badge-primary p-2 mr-2 float-right">forks : 0</span>
+			</li>
+			<li class="list-group-item">
+				Repo Two
+				<span class="badge badge-danger p-2 float-right">Stars : 0</span>
+				<span class="badge badge-success p-2 mr-2 float-right">Watchers : 0</span>
+				<span class="badge badge-primary p-2 mr-2 float-right">forks : 0</span>
+			</li>	
+		</ul> -->
+
+	</div>
+
+	<!-- footer -->
+	<!-- <footer id="footer" class="p-2 text-center bg-primary">
+		<p class="text-white">GitHub Finder &copy;</p>
+	</footer> -->
+	
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="github.js"></script>
+	<script src="ui.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
